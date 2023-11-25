@@ -12,3 +12,25 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ```bash
 git clone https://github.com/d4min/hangman.git
 ```
+
+## Milestone 2
+
+- Defines the variable 'word_list' which is a list of words that the python script will use as the word to be guessed during the Hangman game. 
+
+- Imports the random library in python to allow the script to assign the variable 'word' a random word from the pre-defined list of words.
+```python
+import random
+
+word = random.choice(word_list)
+```
+
+- Takes a character as user input as their first guess. Validates the input using an if statement to ensure it was a single alphabetical character. 
+
+```python
+guess = input("Please enter your first guess as a single character")
+
+if len(guess) == 1 and guess.isalpha():
+    print("Good guess!")
+else:
+    print("Oops! That is not a valid input.")
+```
