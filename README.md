@@ -34,3 +34,7 @@ if len(guess) == 1 and guess.isalpha():
 else:
     print("Oops! That is not a valid input.")
 ```
+
+## Milestone 3
+
+- Builds on the previous validation code and implements a while loop to iteratively check user inputs until a valid input is received. 
