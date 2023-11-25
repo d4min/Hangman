@@ -23,3 +23,14 @@ import random
 
 word = random.choice(word_list)
 ```
+
+ - Takes a character as user input as their first guess. Validates the input using an if statement to ensure it was a single alphabetical character. 
+
+```python
+guess = input("Please enter your first guess as a single character")
+
+if len(guess) == 1 and guess.isalpha():
+    print("Good guess!")
+else:
+    print("Oops! That is not a valid input.")
+```
