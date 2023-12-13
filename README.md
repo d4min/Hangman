@@ -47,3 +47,4 @@ if guess in word:
     else:
         print(f"Sorry, {guess} is not in the word. Try again.")
 ```
+- Defined functions for both of the checks listed above.
