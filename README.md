@@ -38,3 +38,12 @@ else:
 ## Milestone 3
 
 - Builds on the previous validation code and implements a while loop to iteratively check user inputs until a valid input is received. 
+
+- Checks whether the character the user guesses is in the randomly chosen word to be guessed and prints the relevent statement. 
+
+```python
+if guess in word:
+        print(f"Good guess! {guess} is in the word.")
+    else:
+        print(f"Sorry, {guess} is not in the word. Try again.")
+```
