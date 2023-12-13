@@ -37,3 +37,22 @@ class Hangman:
             print(f"Sorry, {guess} is not in the word.")
             self.num_lives -= 1
             print(f"You have {self.num_lives} lives left.")
+
+def play_game(word_list):
+
+    num_lives = 5
+    game = Hangman(word_list, num_lives)
+
+    while True:
+        if game.num_lives == 0:
+            print("You lost!")
+            break
+        elif game.num_letters > 0:
+            game.ask_for_input()
+        else:
+            print("Congratulations. You won the game!")
+            break
+
+word_list = ["pineapple", "peaches", "mango", "watermelon", "banana"]
+
+play_game(word_list)
